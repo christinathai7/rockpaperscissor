@@ -12,8 +12,18 @@
 
 let values = ["rock", "paper", "scissors"];
 let computerPlay = values[Math.floor(Math.random() * 3)];
+let computerSelection = computerPlay;
 
-console.log(computerPlay)
-
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection=="rock" && computerSelection=="rock") {
+        alert('Tie!')
+    }
+    if (playerSelection=="rock" && computerSelection=="paper") {
+        alert('You Lose! Paper beats Rock')
+    }
+    if (playerSelection=="rock" && computerSelection=="scissors") {
+        alert('You win!')
+    }
+}
 
 
