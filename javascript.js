@@ -10,20 +10,27 @@
 // display "you lose!" if player loses
 // input is case-insensitive
 
+
 let values = ["rock", "paper", "scissors"];
 let computerPlay = values[Math.floor(Math.random() * 3)];
+console.log(computerPlay)
 let computerSelection = computerPlay;
 
+let playerChoice = prompt("Rock, paper, or scissors?");
+let playerSelection = playerChoice.toLowerCase()
+console.log(playerSelection)
+
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection=="rock" && computerSelection=="rock") {
-        alert('Tie!')
+    if (playerSelection == "rock" && computerSelection == "rock") {
+        alert("Tie!");
     }
-    if (playerSelection=="rock" && computerSelection=="paper") {
-        alert('You Lose! Paper beats Rock')
+    if (playerSelection == "rock" && computerSelection == "paper") {
+        alert("You Lose! Paper beats Rock");
     }
-    if (playerSelection=="rock" && computerSelection=="scissors") {
-        alert('You win!')
+    if (playerSelection == "rock" && computerSelection == "scissors") {
+        alert("You win!");
     }
 }
+
 
 
